@@ -1,0 +1,16 @@
+section{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    h1{
+    background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 4px;
+    font-size: 40px;
+    }

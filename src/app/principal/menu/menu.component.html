@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ANGULAR MATERIAL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="mensaje">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="vista">Vista Tabla</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="busqueda">Components</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="formulario">Vista Contacto</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="login" *ngIf="!userLogin">Iniciar sesion</a>
+            <a class="nav-link active" aria-current="page" routerLink="login" *ngIf="userLogin" (click)="logout()">Cerrar sesion</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <script>alert("¿Desea salir del formuñlario\n Perdera todos los cambios!!!");</script>
